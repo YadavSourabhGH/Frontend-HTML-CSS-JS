@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <style>
+        body, h1, h2, p, ul, li, form, input, textarea {
+            margin: 0;
+            padding: 0;
+            font-family: Fantasy, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            max-width: 30%;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+            border-radius: 30px 30px 0 0;
+            background-color: #4cafa3;
+            color: white;
+        }
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            padding: 50px 20px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .skills ul {
+
+            justify-content: center;
+            gap: 20px;
+            list-style-type: none;
+            overflow: scroll;
+        }
+
+        .skills li {
+            background-color: #46c0ae;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+
+        .projects {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            background-color: #40b098;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2fd7be;
+        }
+        .mobilebody {
+            max-width: 100%;
+            margin: 0 auto;
+            border-color: #333;
+            border-style: solid;
+            border-radius: 30px;
+            border: 0px 1px 1px 1px;
+        }
+        .notch{
+            width: 100px;
+            height: 20px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            margin:0 auto;
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+<div class="mobilebody">
+   
+<header>
+    <img src="../pfp.png" alt="Profile Picture">
+    <h1>Sourabh Yadav</h1>
+    <h2>Web Developer</h2>
+</header>
+
+<section class="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <p>Hello! I'm Sourabh, a passionate web developer with experience in HTML, CSS, and JavaScript. I love building interactive and responsive websites.</p>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <!-- <li>React</li> -->
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>CPP</li>
+            <li>Java</li>
+        </ul>
+    </div>
+</section>
+
+<section class="projects">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>CodeLens</h3>
+                <p>Checkout CodeLens Here: <a href="https://codelens.live">CodeLens.live</a></p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+</div>
+
+</body>
+</html>
