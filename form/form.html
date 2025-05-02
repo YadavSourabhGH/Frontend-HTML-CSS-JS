@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+    <style>
+        *{
+            font-family: Fantasy, Arial, sans-serif;
+            margin-bottom: 7px;
+        }
+        body{
+            max-width: 425px;
+            margin: 0 auto;
+        }
+        legend{
+            color: blue;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+        Name: <input type="text" name="sname" placeholder="Enter your name">
+        <br>
+        Password: <input type="password" name="spass" placeholder="Enter your password">
+        <br>
+        Gender: <br><input type="radio" name="sgen" id="">Male<br><input type="radio" name="" id="">Female<br><input type="radio" name="" id="">Other
+        <br>
+        <input type="submit" value="Login">
+    </fieldset>
+        <br>
+
+        <fieldset>
+        <legend>Location Information</legend>
+        <br>
+        City: <select name="" id="">
+            <option>Select City</option>
+            <option>Delhi</option>
+            <option>Mumbai</option>
+            <option>Banglore</option>
+            <option>Chennai</option>
+        </select>
+        <br>
+        State: <select name="" id="">
+            <option>Select State</option>
+            <option>Delhi</option>
+            <option>Maharashtra</option>
+            <option>Karnataka</option>
+            <option>Tamil Nadu</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Course Information</legend>
+        
+        <select>
+        <option>Computer Course</option>
+        <optgroup label="3 month Course">
+            <option>C</option>
+            <option>C++</option>
+       </optgroup>
+        <optgroup label="3 month Course">
+            <option>C</option>
+            <option>C++</option>
+       </optgroup>
+        <optgroup label="3 month Course">
+            <option>C</option>
+            <option>C++</option>
+       </optgroup>
+    </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="" id="">Reading<br>
+            <input type="checkbox" name="" id="">Writing<br>
+            <input type="checkbox" name="" id="">Travelling<br>
+            <input type="checkbox" name="" id="">Cooking<br>
+        </fieldset>
+    </form>
+</body>
+</html>
