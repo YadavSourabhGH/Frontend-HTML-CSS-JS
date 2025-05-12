@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITM Group of Institutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    <div id="topmarquee" class="topmarquee">
+        <marquee behavior="scroll" direction="" scrollamount="15">We Accept Entrance Test Scores from CAT, XAT, NMAT, CMAT, GMAT, MAT, ATMA, CUET, and State CET | All The Best For Your Exam 👍🏻 | <b>Apply Now</b></marquee>
+    </div>
+    <nav id="nav" class="nav">
+        <img src="https://cdn.itm.edu/assets/itm_group_logo_8874ddd625.webp" alt="Nav Logo" class="navlogo" id="navlogo">
+        <img src="https://itm.edu/assets/logo/34-Years-logo.webp" alt="" class="promise" id="promise">
+        <div class="navlinks" id="navlinks">
+            <a href="#">Programs</a>
+            <a href="#">Our Institutes</a>
+            <a href="#">Blogs</a>
+            <a href="#">About Us</a>
+            <button id="applynowbtn" class="applynowbtn">Apply Now</button>
+        </div>
+    </nav>
+    <main>
+        <div id="hero" class="hero">
+            <h1>Education<br>That Promises<br>To <span style="color: rgb(169, 29, 84);">Transform</span></h1>
+            <p>Pursue your Passion with <b>ITM Group of Institutions</b></p>
+            <video muted>
+                <source id="herovideosrc" src="herovideo1.mp4" type="video/mp4" />
+            </video>
+            <button class="admbtn">Admission Open</button>
+            </div>
+            <div class="audio" id="audio">
+                <audio autoplay id="audioPlayer">
+                    <source src="itmaudio.mp3" type="audio/mpeg">
+                  </audio>
+            </div>
+    </main>
+
+</header>
+
+<script>
+    const audioPlayer = document.getElementById('audioPlayer');
+    const videoPlayer = document.querySelector('video');
+    const videoSource = document.getElementById('herovideosrc');
+
+    window.onclick = function() {
+        audioPlayer.play();
+        videoPlayer.play();
+    };
+
+    videoPlayer.onended = function() {
+        videoSource.src = 'herovideo.mp4';
+        videoPlayer.load();
+        videoPlayer.play();
+        videoPlayer.loop = true;
+    };
+    
+    
+</script>
+</body>
+</html>
